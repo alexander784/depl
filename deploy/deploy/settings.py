@@ -12,7 +12,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-wf8wy9zc8gx+6&w%jero&
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 # Render injects your service's hostname; split allows multiple hosts
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '127.0.0.1,localhost').split(',')
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'depl-96nw.onrender.com').split(',')
 
 
 # Application definition
