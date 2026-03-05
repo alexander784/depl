@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-wf8wy9zc8gx+6&w%jero&y33^by880079b(vr*#rjlw!a^mrv9')
 
 # DEBUG is False on Render (you'll set DEBUG=False in Render env vars)
-DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+DEBUG = os.environ.get('DEBUG', 'False') == 'False'
 
 # Render injects your service's hostname; split allows multiple hosts
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'depl-96nw.onrender.com').split(',')
